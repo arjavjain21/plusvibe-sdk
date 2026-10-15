@@ -1,0 +1,23 @@
+{
+  "name": "plusvibe-sdk",
+  "version": "0.1.0",
+  "description": "Agent-friendly, zero-dependency PlusVibe API SDK for campaign sequencing, sender operations, leads, Unibox, analytics and webhooks.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./endpoints": "./src/endpoints.js"
+  },
+  "files": ["src", "docs", "examples", "README.md"],
+  "engines": {"node": ">=18"},
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/client.js && node --check src/endpoints.js && node --check src/index.js"
+  },
+  "keywords": ["plusvibe", "cold-email", "sequencer", "campaigns", "webhooks", "sdk", "agents"],
+  "license": "MIT"
+}
